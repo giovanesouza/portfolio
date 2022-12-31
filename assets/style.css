@@ -1,0 +1,808 @@
+/* FORMATAÇÃO BARRA SCROLL */
+
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(40deg, #212529, #0D6EFD);
+  border-radius: 5rem;
+}
+
+
+/* FORMATAÇÃO GERAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+:root {
+  --color-dark: #212529;
+  --color-light: #fff;
+  --color-secondary: #6C757D;
+  --color-success: #198754;
+  --color-danger: #DC3545;
+  --color-primary: #0D6EFD;
+  --color-warning: #FFC107;
+  --color-gold: #8b6903;
+
+}
+
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: var(--color-dark);
+  color: var(--color-secondary);
+}
+
+
+.container {
+  max-width: 120rem;
+  margin: auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: #fff; */
+}
+
+/* Display flex-direction column */
+.column {
+  flex-direction: column;
+}
+
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  background-color: #212529d7;
+  z-index: 999;
+
+}
+
+header .container {
+
+  height: 6rem;
+  padding: 2rem;
+
+
+}
+
+/* Icon </> Logo e presentation*/
+.iconCode {
+  margin: 0;
+  color: var(--color-warning);
+}
+
+header .logo a {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  font-size: 1.6rem;
+  color: var(--color-secondary);
+
+  transition: .2s;
+}
+
+header .logo a:hover {
+  color: var(--color-warning);
+  border: 0;
+}
+
+
+nav,
+ul {
+  display: flex;
+  align-items: center;
+}
+
+/* ul {
+    display: none;
+  } */
+
+/* MENU PARA DISPOSITIVOS MÓVEIS */
+nav .menuMobile {
+
+  display: none;
+
+  width: 4rem;
+  height: 4rem;
+
+  /* display: flex; */
+  flex-direction: column;
+  justify-content: space-around;
+
+  padding: 0.5rem;
+  cursor: pointer;
+
+  /* background-color: #198754; */
+}
+
+nav .menuMobile .menuLine {
+  width: 100%;
+  height: 0.3rem;
+  background-color: var(--color-secondary);
+
+  border-radius: 1rem;
+
+}
+
+nav .menuMobile:hover .menuLine {
+  background-color: var(--color-warning);
+}
+
+
+
+nav ul li a {
+
+  /* Valor BLOCK possibilita a manipulação de dimensões */
+  display: inline-block;
+
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  color: var(--color-secondary);
+  padding: 1rem;
+
+  border-bottom: 0.1rem solid transparent;
+  /* border-radius: 0.5rem; */
+  transition: .2s;
+}
+
+nav ul li a:hover,
+a.active {
+  color: var(--color-warning);
+  border-bottom: 0.2rem solid var(--color-warning);
+
+}
+
+
+
+/* SEÇÃO HELLO */
+#hello {
+  background-color: #14171a;
+}
+
+
+#hello .helloPresentation {
+  width: 100%;
+  height: calc(100vh - 6rem);
+  margin-top: 6rem;
+
+  display: flex;
+}
+
+.helloPresentation .presentation,
+.helloPresentation .photo {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  /* padding: 0 2rem; */
+  padding-left: 2rem;
+}
+
+.presentation h1 {
+  color: var(--color-light);
+  font-size: 3.2rem;
+}
+
+.presentation span.name {
+  color: var(--color-warning);
+  font-size: 3.8rem;
+}
+
+/* Mão acenando */
+.presentation img.wavingHand {
+  width: 8rem;
+  position: absolute;
+  margin-left: 20rem;
+  margin-top: -8rem;
+}
+
+
+.presentation .occupation {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+
+  font-size: 2rem;
+  color: var(--color-light);
+  border-top: 0.1rem solid var(--color-secondary);
+  border-bottom: 0.1rem solid var(--color-secondary);
+  padding: 0.5rem 0;
+}
+
+
+.helloPresentation .socialMedia {
+  margin-top: 1.6rem;
+  text-align: center;
+}
+
+.helloPresentation .socialMedia a {
+  color: var(--color-secondary);
+  font-size: 3rem;
+  margin-right: 1rem;
+}
+
+.helloPresentation .socialMedia a:hover {
+  color: var(--color-warning);
+}
+
+
+.helloPresentation .photo {
+  background-color: var(--color-light);
+  background-image: url('images/photo-presentation.png');
+  background-position: center top;
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+
+  filter: opacity(0.5);
+}
+
+
+
+
+/* SEÇÃO SOBRE MIM */
+
+#aboutMe {
+  background-color: var(--color-light);
+  color: var(--color-dark);
+  padding: 0 2rem;
+
+}
+
+.aboutMeContent {
+  text-align: center;
+  padding: 2rem;
+}
+
+.aboutMeContent h2,
+img {
+  margin-bottom: 3rem;
+}
+
+.aboutMeContent img {
+  width: 14rem;
+  height: 14rem;
+  border: 0.3rem solid var(--color-dark);
+  /* filter: drop-shadow(0 0 1rem var(--color-dark)); */
+  /* border: 0.2rem solid var(--color-dark); */
+  border-radius: 50%;
+}
+
+
+.aboutMeContent .content {
+  text-align: justify;
+}
+
+mark {
+  background-color: var(--color-dark);
+  color: var(--color-warning);
+}
+
+.my-function {
+  color: var(--color-warning);
+  background-color: var(--color-dark);
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+
+.text-center {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+
+
+.aboutMeContent .content p.start,
+span {
+  color: var(--color-secondary);
+  margin-bottom: 1rem;
+}
+
+
+
+
+
+
+/* SEÇÃO TECNOLOGIAS */
+
+/* ESTOU AQUI */
+
+#tecnologies {
+  color: var(--color-light);
+  padding: 2rem;
+}
+
+#tecnologies h2 {
+  margin-bottom: 1rem;
+}
+
+
+
+#tecnologies .listTecnologies {
+
+  display: flex;
+  justify-content: space-around;
+
+  /* Quebra de linha quando não couber card na mesma linha */
+  flex-wrap: wrap;
+
+  gap: 1rem;
+
+}
+
+
+.listTecnologies .language {
+  flex: 1;
+  /* Tamanho mínimo para cada CARD. => Necessário ter para que ocorra a quebra de linha WRAP */
+  min-width: 20rem;
+
+  text-align: center;
+  border: 0.1rem solid var(--color-warning);
+  border-radius: 1rem;
+  padding: 2rem;
+
+  cursor: pointer;
+}
+
+.listTecnologies .language:hover {
+  background-color: var(--color-gold);
+
+}
+
+
+/* Icons linguagens/tecnologias */
+.language i {
+  font-size: 6rem;
+}
+
+
+
+
+
+/* SEÇÃO PROJETOS */
+
+section#projects {
+  background-color: var(--color-light);
+  color: var(--color-dark);
+
+}
+
+
+section#projects h2 {
+  margin: 2rem 0;
+}
+
+
+.listProjects {
+
+  width: 100%;
+  margin-bottom: 2rem;
+
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, 50rem);
+
+  gap: 2rem;
+
+}
+
+/* Engloba a imagem + legenda */
+figure {
+  width: 100%;
+  background-color: var(--color-dark);
+  border: 0.1rem solid var(--color-dark);
+  border-radius: 1rem;
+  padding: 1rem;
+
+  transition: .2s;
+  cursor: pointer;
+}
+
+figure:hover {
+  transform: scale(1.05);
+}
+
+
+
+figure img {
+  width: 100%;
+  margin-bottom: 0.5rem;
+
+}
+
+figure figcaption {
+  background-color: var(--color-gold);
+
+  text-align: center;
+  color: var(--color-light);
+  padding: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+/* SEÇÃO CONTATO */
+
+section#contact h2 {
+  color: var(--color-light);
+  margin: 3rem 0;
+
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  flex: 1;
+}
+
+
+label .icon {
+  position: absolute;
+  margin-top: 0.2rem;
+  margin-left: 0.2rem;
+  background-color: var(--color-dark);
+  color: var(--color-warning);
+  font-size: 1.6rem;
+  padding: 1rem;
+
+}
+
+
+input,
+textarea {
+
+  width: 80vw;
+  background-color: transparent;
+
+  font-size: 1.6rem;
+  color: var(--color-warning);
+
+  border: 0.1rem solid var(--color-light);
+
+  /* Borda padrão ao focar no campo */
+  outline: none;
+
+
+  margin-bottom: 1rem;
+  padding: 1rem 5rem;
+}
+
+input:focus,
+textarea:focus {
+  border-color: var(--color-warning);
+}
+
+
+textarea {
+  height: 20rem;
+  resize: none;
+  padding: 1rem;
+
+}
+
+input[type=submit] {
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: var(--color-warning);
+  color: var(--color-dark);
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+/* RODAPÉ */
+
+footer .container {
+  gap: 1rem;
+  padding: 1.6rem 0;
+
+}
+
+
+footer .socialMedia a {
+  color: var(--color-secondary);
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+
+footer .socialMedia a:hover {
+  color: var(--color-warning);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* MODAL */
+
+.modal {
+  display: none;
+
+  width: 100vw;
+  height: 100vh;
+  background-color: #14171ab6;
+  
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+
+  cursor: default;
+
+  transition: all ease .5s;
+}
+
+.modalContent {
+  width: 80%;
+  height: auto;
+  background-color: var(--color-light);
+
+
+  color: var(--color-dark);
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  border-radius: 2rem;
+}
+
+
+.modalTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-bottom: 0.1rem solid var(--color-gold);
+  padding: 1rem 2rem;
+}
+
+
+
+.modalTitle h5,
+button {
+  font-size: 1.6rem;
+}
+
+.modalTitle button {
+  border: 0;
+
+}
+
+
+.modalTitle button:hover {
+  color: var(--color-danger);
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+.modalBody {
+  text-align: justify;
+  padding: 1rem 2rem;
+}
+
+
+.modalBody div {
+  margin-bottom: 1.6rem;
+  
+}
+
+
+/* UTILIZADO NO MODAL DE PROJETOS */
+.modalBody p {
+  margin-bottom: 1rem;
+
+}
+
+.modalBody p a {
+  color: var(--color-secondary);
+
+  transition: .2s;
+}
+
+.modalBody p a:hover {
+
+  color: var(--color-gold);
+
+}
+
+
+
+
+/* INFO Tecnologias e Projetos */
+
+.info {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+
+  margin-bottom: 2rem;
+}
+
+
+.info .textInfo {
+  text-align: center;
+  font-size: 1.2rem;
+
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.info .textInfo::before,
+.info .textInfo::after {
+  content: '';
+
+  width: 10rem;
+  height: 0.5rem;
+  background-color: var(--color-gold);
+  border-radius: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+
+
+  /* MENU PARA DISPOSITIVOS MÓVEIS */
+  nav .menuMobile {
+    display: flex;
+  }
+
+
+  nav ul {
+    display: none;
+
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+
+    width: 100vw;
+
+    background: #212529;
+    margin-top: 25rem;
+
+
+
+  }
+
+
+
+  nav ul li a {
+    width: 100vw;
+    text-align: center;
+    border: 0;
+  }
+
+  nav ul li a:hover,
+  a.active {
+    font-weight: bold;
+    color: var(--color-dark);
+    background-color: var(--color-warning);
+    border: 0;
+
+  }
+
+
+
+  /* PROJETOS */
+
+  .listProjects {
+    grid-template-columns: 1fr;
+    padding: 0 2rem;
+
+  }
+
+
+}
+
+
+
+@media (max-width: 600px) {
+
+  html {
+    font-size: 55%;
+  }
+
+  #hello .helloPresentation {
+    flex-direction: column;
+  }
+
+
+  .helloPresentation .presentation {
+    padding: 0;
+    align-items: center;
+  }
+
+  .presentation .occupation {
+    justify-content: center;
+    margin-top: 0.5rem;
+
+  }
+
+
+  /* Mão acenando */
+  .presentation img.wavingHand {
+    margin-left: 26rem;
+  }
+
+
+  input,
+  textarea {
+    flex: 1;
+  }
+
+
+
+}
+
+
+@media (max-width: 425px) {
+
+  html {
+    font-size: 55%;
+  }
+
+  /* Mão acenando */
+  .presentation img.wavingHand {
+    margin-left: 20rem;
+  }
+
+
+}

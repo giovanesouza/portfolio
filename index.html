@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=0" />
+
+    <!-- DEFINE O LINK DO ARTIGO/SITE -->
+    <meta property="og:url" content="https://dev-giovane-souza-portfolio.vercel.app/" />
+
+    <!-- DEFINE O TIPO DO SITE -->
+    <meta property="og:type" content="product" />
+
+    <!-- TÍTULO - TEXTO PRINCIPAL DO SITE  -->
+    <meta property="og:title" content="Developer Giovane Souza" />
+
+    <!-- DESCRIÇÃO - TEXTO QUE FICA ABAIXO DO TÍTULO  -->
+    <meta property="og:description"
+        content="Olá, me chamo Giovane Souza e sou Desenvolvedor FullStack. Minha função como desenvolvedor é resolver problemas de forma eficaz, a fim de garantir a satisfação do cliente." />
+
+    <!-- IMAGEM - APARECE AO BUSCAR/COMPARTILHAR O SITE  -->
+    <meta property="og:image"
+        content="https://dev-giovane-souza-portfolio.vercel.app/static/media/photo-about-me.629ad33cef357ba113dc.jpg" />
+
+
+    <!-- ICON ABA -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+
+
+    <!-- LOGO TECHNOLOGIES -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
+
+    <!-- REMIX ICON -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+
+    <!-- CSS EXTERNO -->
+    <link rel="stylesheet" href="assets/style.css">
+
+    <title>Developer Giovane Souza</title>
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header>
+        <div class="container">
+
+            <div class="logo">
+                <a href="/"><span class="ri-code-s-slash-line iconCode"></span> Dev Giovane Souza</a>
+            </div>
+
+            <!-- MENU -->
+            <nav>
+
+                <div class="menuMobile" onClick="showMenu()">
+                    <div class="menuLine"></div>
+                    <div class="menuLine"></div>
+                    <div class="menuLine"></div>
+                </div>
+
+                <ul>
+                    <li><a href="#hello" class="active">Home</a></li>
+                    <li><a href="#aboutMe">Sobre mim</a></li>
+                    <li><a href="#tecnologies">Tecnologias</a></li>
+                    <li><a href="#projects">Projetos</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+
+
+    <!-- SEÇÃO HELLO / HOME -->
+    <section id="hello">
+
+        <div class="container">
+
+            <div class="helloPresentation">
+
+                <div class="presentation">
+
+                    <h1>Olá, Sou o<br />
+                        <img src="https://emojipedia-us.s3.amazonaws.com/source/microsoft-teams/337/waving-hand_1f44b.png"
+                            class="wavingHand" />
+                        <span class="name">Giovane Souza</span>
+
+                    </h1>
+
+
+                    <span class="occupation"><span class="ri-code-s-slash-line iconCode"></span> Jr. Developer Full
+                        Stack</span>
+
+
+
+                    <div class="socialMedia">
+                        <a href="https://www.linkedin.com/in/developergiovanesouza/" target="_blank"
+                            class="ri-linkedin-box-fill"></a>
+                        <a href="https://github.com/giovanesouza" target="_blank" class="ri-github-fill"></a>
+                    </div>
+
+                </div>
+
+
+                <div class="photo">
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+    <!-- SEÇÃO SOBRE MIM -->
+    <section id="aboutMe">
+
+        <div class="container">
+
+            <div class="aboutMeContent">
+
+                <h2>Sobre mim</h2>
+
+                <img src="assets/images/photo-about-me.jpg" alt="Foto Developer Giovane Souza" />
+
+                <div class="content">
+
+                    <p class="text-center">Olá, me chamo <strong>Giovane Souza</strong> e sou <mark>Desenvolvedor
+                            FullStack</mark>.</p>
+
+                    <p class="text-center my-function">Minha função é <strong> resolver problemas de forma eficaz por
+                            meio da programação, a fim de garantir a satisfação do cliente</strong>.</p> <br />
+
+                    <p class="start"> Iniciei os estudos na programação em maio de 2022 por meio da <a
+                            href="https://recodepro.org.br/" target="_blank">Recode Pro</a> - onde recebi a certificação
+                        FullStack - e, desde então, venho buscando conhecimentos complementares a fim de aprofundar-me
+                        nas tecnologias aprendidas ao longo da formação, objetivando, também, aprender novas linguagens.
+                    </p> <br />
+
+                    <span class="skills"> <strong>Principais competências</strong>: Organização, Pontualidade e
+                        Determinação.</span>
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+    <!-- SEÇÃO TECNOLOGIAS -->
+    <section class="container column" id="tecnologies">
+
+        <h2>Tecnologias e Skills</h2>
+
+        <div class="info">
+            <div class="textInfo">Clique no ícone da tecnologia para mais informações</div>
+        </div>
+
+        <!-- LISTA COM AS TECNOLOGIAS -->
+        <div class="listTecnologies"></div>
+
+
+    </section>
+
+
+
+    <!-- SEÇÃO PROJETOS -->
+    <section id="projects">
+
+        <div class="container column">
+            <h2>Projetos</h2>
+
+            <div class="info">
+                <div class="textInfo">Clique na imagem do projeto para mais informações</div>
+            </div>
+
+            <!-- LISTA TODOS OS PROJETOS (PRINCIPAIS) -->
+            <div class="listProjects"></div>
+
+        </div>
+    </section>
+
+
+
+
+    <!-- SEÇÃO CONTATO -->
+    <section class="container column" id="contact">
+
+        <h2>Contato</h2>
+
+        <form action="" method="">
+
+            <label>
+                Nome: <br />
+                <span class="ri-user-fill icon"></span>
+                <input type="text" name="nome" placeholder="Por favor, informe o seu nome" required />
+            </label>
+
+            <label>
+                E-mail: <br />
+                <span class="ri-mail-fill icon"></span>
+                <input type="email" name="email" placeholder="Por favor, informe o seu e-mail para contato" required />
+            </label>
+
+            <label>
+                Assunto: <br />
+                <textarea name="assunto" placeholder="Por favor, escreva a sua mensagem aqui" required></textarea>
+            </label>
+
+            <input type="submit" value="Enviar" />
+
+        </form>
+
+    </section>
+
+
+
+
+    <!-- MODAL -->
+    <div class="modal">
+
+        <div class="modalContent">
+
+            <div class="modalTitle">
+
+                <h5>TÍTULO</h5>
+
+                <button>X</button>
+
+            </div>
+
+            <div class="modalBody">
+
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. At ut dignissimos debitis quisquam culpa
+                adipisci placeat quia neque assumenda maxime et asperiores rem sit aut, dolores impedit ad odit
+                accusantium?
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <footer>
+        <div className="container column">
+
+            &copy; 2022 - Dev Giovane Souza
+
+            <div className="socialMedia">
+                <a href="https://www.linkedin.com/in/developergiovanesouza/" target="_blank"
+                    className="ri-linkedin-box-fill"></a>
+                <a href="https://github.com/giovanesouza" target="_blank" className="ri-github-fill"></a>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <script src="assets/technologies.js"></script>
+    <script src="assets/projects.js"></script>
+    <script src="assets/script.js"></script>
+</body>
+
+</html>
