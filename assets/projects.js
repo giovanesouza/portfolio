@@ -25,6 +25,14 @@ const projects = [
         description: ''
     },
     {
+        name: 'Venda de Pizzas',
+        img: 'assets/images/buyPizza.png',
+        stack: 'FrontEnd',
+        urlRepository: 'https://github.com/giovanesouza/BuyPizza',
+        urlApp: 'https://giovanesouza.github.io/BuyPizza/',
+        description: ''
+    },
+    {
         name: 'Calculadora de IMC',
         img: 'assets/images/calculadora-imc.png',
         stack: 'FrontEnd',

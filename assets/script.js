@@ -8,9 +8,14 @@ document.querySelectorAll('li a').forEach((item) => {
         document.querySelector('li a.active').classList.remove('active'); // Remove a seleção do link anterior
         item.classList.add('active'); // Add class no novo link
 
+
+        // AO CLICAR NO LINK FECHA O MENU
+        // showMenu();
+
     });
 
 });
+
 
 
 
@@ -19,34 +24,52 @@ let listTecnologies = document.querySelector('.listTecnologies');
 
 
 // Faz mapeamento de todos os itens e permite acessar os valores de todos os atributos
-languages.map((item, index) => {
+stacks.map((item, index) => {
+
 
     listTecnologies.innerHTML += `
     <div class="language" data-key="${index}">
-        <i class="${item.icon}" data-key="${index}"></i>
+        <div class="material-symbols-outlined">${item.icon}</div>
+        <div class="name">${item.name}</div>
     </div>
     `;
 
-});
 
+
+});
 
 
 // Seleciona TODAS as divs com class Language
 document.querySelectorAll('.language').forEach(item => {
 
     // Adiciona EVENTO em cada language
-    item.addEventListener('click', e => {
+    item.addEventListener('click', (e) => {
 
-        let key = parseInt(e.target.getAttribute('data-key')); // Pega o valor do atributo
+        let key = parseInt(e.currentTarget.getAttribute('data-key')); // Pega o valor do atributo
 
 
-        document.querySelector('.modalTitle h5').innerHTML = `${languages[key].name}`; // Exibe o Nome da Linguagem
+
+        let languages = stacks[key].languages;
+
+        languagesHtml = '';
+
+        // PEGA TODAS AS TECHS E FAZ UM LOOP
+        for (let i = 0; i < languages.length; i++) {
+
+            languagesHtml += `<div class="${languages[i]} icon"></div>`;
+        }
+
+
+        document.querySelector('.modalTitle h5').innerHTML = `${stacks[key].name}`; // Exibe o Nome da Linguagem
         document.querySelector('.modalBody').innerHTML = `
         
-        <div class="describe"><strong>Descrição:</strong> ${languages[key].skills[0]}</div>
-        <div class="hability"><strong>Habilidades:</strong> ${languages[key].skills[1]}</div>
+        <div class="description"><strong>Habilidades:</strong> ${stacks[key].skills}</div>
+        <div class="techs">${languagesHtml}</div>
+
+        <div></div>
         
         `;
+
 
         document.querySelector('.modal').style.display = 'block'; // Seleciona o MODAL e DEIXA-O VISÍVEL
 
@@ -54,6 +77,9 @@ document.querySelectorAll('.language').forEach(item => {
             document.querySelector('.modal').style.opacity = '1';
         }, 100);
 
+
+        // REMOVE BARRA DE ROLAGEM ENQUANTO MODAL ESTIVER ATIVO
+        document.querySelector('body').style.overflow = 'hidden';
 
 
     })
@@ -70,7 +96,7 @@ projects.map((item, index) => {
 
     listProjects.innerHTML += `
         <figure data-key="${index}">
-            <img src="${item.img}" alt="${item.name}" data-key="${index}" />
+            <img src="${item.img}" alt="${item.name}" />
 
             <figcaption data-key="${index}">${item.name}</figcaption>
         </figure>
@@ -87,7 +113,7 @@ document.querySelectorAll('figure').forEach(item => {
     // Adiciona EVENTO em cada language
     item.addEventListener('click', e => {
 
-        let key = parseInt(e.target.getAttribute('data-key')); // Pega o valor do atributo
+        let key = parseInt(e.currentTarget.getAttribute('data-key')); // Pega o valor do atributo
 
         document.querySelector('.modalTitle h5').innerHTML = `${projects[key].name}`; // Exibe o Nome da Linguagem
         document.querySelector('.modalBody').innerHTML = `
@@ -117,6 +143,9 @@ document.querySelectorAll('figure').forEach(item => {
         }, 100);
 
 
+        // REMOVE BARRA DE ROLAGEM ENQUANTO MODAL ESTIVER ATIVO
+        document.querySelector('body').style.overflow = 'hidden';
+
     })
 
 });
@@ -132,6 +161,9 @@ document.querySelector('.modalTitle button').addEventListener('click', () => {
         document.querySelector('.modal').style.display = 'none';
     }, 100);
 
+
+    // EXIBE A BARRA DE ROLAGEM AO FECHAR O MODAL
+    document.querySelector('body').style.overflow = 'scroll';
 
 });
 
@@ -160,22 +192,40 @@ document.querySelector('form').addEventListener('submit', (e) => {
 
 
 
-
-
-
-
 // FUNÇÕES
 
 // Função para mostrar o Menu em dispositivos móveis
 const showMenu = () => {
+    let header = document.querySelector('header');
     let menu = document.querySelector('nav ul');
-    //    console.log(menu);
+
+    let line1 = document.querySelector('.menuLine.first');
+    let line2 = document.querySelector('.menuLine.second');
+    let line3 = document.querySelector('.menuLine.third');
+
 
     if (menu.style.display == 'none') {
+
+        header.style.backgroundColor = '#212529';
+
         menu.style.display = 'flex';
+
+        line1.classList.add('firstLine');
+        line2.classList.add('secondLine');
+
+        line3.style.display = 'none';
+
+
     } else {
+
+        header.style.backgroundColor = '#212529d7';
+
         menu.style.display = 'none';
+
+        line1.classList.remove('firstLine');
+        line2.classList.remove('secondLine');
+        line3.style.display = 'block';
     }
 
-}
 
+}

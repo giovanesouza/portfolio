@@ -1,70 +1,36 @@
-const languages = [
+const stacks = [
 
     {
-        name: 'HTML5',
-        icon: 'devicon-html5-plain-wordmark',
-        skills: [
-            'Com esta linguagem de marcação desenvolvo toda a estrutura de sites/sistemas utilizando semântica, que além de facilitar a manutenção do projeto, também é de suma importância para os mecanismos de busca e leitores de tela (acessibilidade).',
-
-            'Tags semânticas, links internos e externos, formulários, tabelas, imagens, audio e vídeo, listas, metatags e muito mais.'
+        name: 'Front-End',
+        icon: 'view_sidebar',
+        skills: 'Por meio das tecnologias Front-End desenvolvo desde interfaces simples até complexas, com elementos estáticos e/ou dinâmicos, utilizando as boas práticas que facilitam a manutenção dos projetos, além de tornar-los visíveis aos mecanismos de busca e leitores de tela (acessibilidade).',
+        languages: [
+            'devicon-html5-plain-wordmark colored',
+            'devicon-css3-plain-wordmark colored',
+            'devicon-bootstrap-plain-wordmark colored',
+            'devicon-javascript-plain colored',
+            'devicon-react-original-wordmark colored'
         ]
     },
     {
-        name: 'CSS3',
-        icon: 'devicon-css3-plain-wordmark',
-        skills: [
-            'Por meio desta linguagem baseada em folhas de estilos desenvolvo toda a estilização/formatação dos elementos estruturais (desenvolvidos via HTML - de forma estática) e/ou de forma dinâmica, via JS, por exemplo.',
-
-            'Flex, css grid, responsividade, margins e paddings, cores (Rgba, Hexadecimal), backgrounds (cores, imagens, gradientes), bordas, box-sizing, seletores, sombras, transições, animações, pseudo-elementos, pseudo-classes e muito mais.'
+        name: 'Back-End',
+        icon: 'integration_instructions',
+        skills: '',
+        languages: [
+            'devicon-java-plain-wordmark colored',
+            'devicon-spring-plain-wordmark colored',
+            'devicon-csharp-plain-wordmark colored'
         ]
     },
     {
-        name: 'Bootstrap',
-        icon: 'devicon-bootstrap-plain-wordmark',
-        skills: [
-            '',
-            ''
-        ]
-    },
-    {
-        name: 'Javascript',
-        icon: 'devicon-javascript-plain',
-        skills: [
-            '',
-            ''
-        ]
-    },
-    {
-        name: 'React JS',
-        icon: 'devicon-react-original-wordmark',
-        skills: [
-            '',
-            ''
-        ]
-    },
-    {
-        name: 'Spring Framework',
-        icon: 'devicon-spring-plain-wordmark',
-        skills: [
-            '',
-            ''
-        ]
-    },
-    {
-        name: 'MySql',
-        icon: 'devicon-mysql-plain-wordmark',
-        skills: [
-            '',
-            ''
-        ]
-    },
-    {
-        name: 'MongoDB',
-        icon: 'devicon-mongodb-plain-wordmark',
-        skills: [
-            '',
-            ''
+        name: 'Banco de Dados',
+        icon: 'database',
+        skills: '',
+        languages: [
+            'devicon-mysql-plain-wordmark colored',
+            'devicon-mongodb-plain-wordmark colored'
         ]
     }
+
 
 ];
