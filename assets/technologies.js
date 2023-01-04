@@ -3,7 +3,7 @@ const stacks = [
     {
         name: 'Front-End',
         icon: 'view_sidebar',
-        skills: 'Por meio das tecnologias Front-End desenvolvo desde interfaces simples até complexas, com elementos estáticos e/ou dinâmicos, utilizando as boas práticas que facilitam a manutenção dos projetos, além de tornar-los visíveis aos mecanismos de busca e leitores de tela (acessibilidade).',
+        skills: 'Desenvolvimento de interfaces simples até complexas, com elementos estáticos e/ou dinâmicos, utilizando as boas práticas que facilitam a manutenção dos projetos, além de tornar-los visíveis aos mecanismos de busca (SEO) e leitores de tela (acessibilidade). Semântica, tabelas, formulários, listas, imagem, audio e vídeo, Animações, Flex, CSS Grid, Cores (Rgba, hexadecimal), backgrounds (color, image, gradient), consumo de APIs, interatividade, Loops e muito mais.',
         languages: [
             'devicon-html5-plain-wordmark colored',
             'devicon-css3-plain-wordmark colored',
@@ -15,7 +15,7 @@ const stacks = [
     {
         name: 'Back-End',
         icon: 'integration_instructions',
-        skills: '',
+        skills: 'Desenvolvimento da parte lógica de sistemas, projetos utilizando o padrão MVC (Model, View and Controller), integrações front-back-banco e desenvolvimento de APIs utilizando a Programação Orientada a Objetos - POO.',
         languages: [
             'devicon-java-plain-wordmark colored',
             'devicon-spring-plain-wordmark colored',
@@ -25,10 +25,18 @@ const stacks = [
     {
         name: 'Banco de Dados',
         icon: 'database',
-        skills: '',
+        skills: 'Modelagem (BrModelo), implementação, consultas simples (SELECT) e personalizadas com Where sem e/ou com operadores, funções, inserções (INSERT INTO), exclusões (DELETE) e atualizações (UPDATE) e muito mais.',
         languages: [
             'devicon-mysql-plain-wordmark colored',
             'devicon-mongodb-plain-wordmark colored'
+        ]
+    },
+    {
+        name: 'Outras',
+        icon: 'add',
+        skills: '',
+        languages: [
+            'devicon-wordpress-plain-wordmark colored'
         ]
     }
 

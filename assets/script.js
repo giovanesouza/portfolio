@@ -172,23 +172,20 @@ document.querySelector('.modalTitle button').addEventListener('click', () => {
 
 
 // SOLICITAÇÃO DE CONTATO - FORM
+// document.querySelector('form').addEventListener('submit', (e) => {
+//     e.preventDefault();
 
-document.querySelector('form').addEventListener('submit', (e) => {
+//     let nome = document.querySelector('[name=nome]');
+//     let email = document.querySelector('[name=email]');
+//     let assunto = document.querySelector('[name=assunto]');
 
-    e.preventDefault();
+//     alert(`Olá, ${nome.value}! Sua solicitação de contato foi enviada com sucesso! \nEm breve entrarei em contato pelo e-mail: ${email.value}. \n\nAtt, Dev Giovane Souza.`)
 
-    let nome = document.querySelector('[name=nome]');
-    let email = document.querySelector('[name=email]');
-    let assunto = document.querySelector('[name=assunto]');
+//     nome.value = "";
+//     email.value = "";
+//     assunto.value = "";
 
-    alert(`Olá, ${nome.value}! Sua solicitação de contato foi enviada com sucesso! \nEm breve entrarei em contato pelo e-mail: ${email.value}. \n\nAtt, Dev Giovane Souza.`)
-
-    nome.value = "";
-    email.value = "";
-    assunto.value = "";
-
-
-});
+// });
 
 
 
