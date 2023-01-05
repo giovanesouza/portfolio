@@ -19,7 +19,8 @@ const stacks = [
         languages: [
             'devicon-java-plain-wordmark colored',
             'devicon-spring-plain-wordmark colored',
-            'devicon-csharp-plain-wordmark colored'
+            'devicon-csharp-plain-wordmark colored',
+            'devicon-php-plain colored'
         ]
     },
     {
@@ -34,8 +35,9 @@ const stacks = [
     {
         name: 'Outras',
         icon: 'add',
-        skills: '',
+        skills: 'Versionamento de código e criação de sites com CMS (Sistema de Gestão de Conteúdos - WordPress).',
         languages: [
+            'devicon-git-plain-wordmark colored',
             'devicon-wordpress-plain-wordmark colored'
         ]
     }
