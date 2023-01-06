@@ -4,15 +4,23 @@
 document.querySelectorAll('li a').forEach((item) => {
 
     // Seleciona um tamnho e desmarca as demais
-    item.addEventListener('click', (e) => {
+    item.addEventListener('click', () => {
+
         document.querySelector('li a.active').classList.remove('active'); // Remove a seleção do link anterior
         item.classList.add('active'); // Add class no novo link
 
+        // AO CLICAR NO LINK FECHA O MENU (window.innerWidth - Verifica a largura atual da tela)
+        if (window.innerWidth < 769) {
+          
+            document.querySelector('li a.active').classList.remove('active');
+            item.classList.add('active');
 
-        // AO CLICAR NO LINK FECHA O MENU
-        // showMenu();
+            showMenu();
+
+        }
 
     });
+
 
 });
 
@@ -171,6 +179,7 @@ document.querySelector('.modalTitle button').addEventListener('click', () => {
 
 
 
+
 // SOLICITAÇÃO DE CONTATO - FORM
 // document.querySelector('form').addEventListener('submit', (e) => {
 //     e.preventDefault();
@@ -194,7 +203,7 @@ document.querySelector('.modalTitle button').addEventListener('click', () => {
 // Função para mostrar o Menu em dispositivos móveis
 const showMenu = () => {
     let header = document.querySelector('header');
-    let menu = document.querySelector('nav ul');
+    let menu = document.querySelector('nav ul.menu-mobile-links');
 
     let line1 = document.querySelector('.menuLine.first');
     let line2 = document.querySelector('.menuLine.second');
@@ -211,6 +220,7 @@ const showMenu = () => {
         line2.classList.add('secondLine');
 
         line3.style.display = 'none';
+
 
 
     } else {
