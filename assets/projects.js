@@ -33,6 +33,14 @@ const projects = [
         description: 'Simula uma página de solicitação de pedidos de uma pizzaria.'
     },
     {
+        name: 'Teclado Musical',
+        img: 'assets/images/musicalkeyboard.png',
+        stack: 'FrontEnd',
+        urlRepository: 'https://github.com/giovanesouza/musicalkeyboard',
+        urlApp: 'https://giovanesouza.github.io/musicalkeyboard/',
+        description: 'Instrumento musical desenvolvido com HTML, CSS e JS.'
+    },
+    {
         name: 'Calculadora de IMC',
         img: 'assets/images/calculadora-imc.png',
         stack: 'FrontEnd',
@@ -48,7 +56,6 @@ const projects = [
         urlApp: 'https://giovanesouza.github.io/buscaCep/',
         description: 'Consumindo a API via cep. Possibilita consultar CEPs de todo o território brasileiro.'
     }
-
 
 
 
