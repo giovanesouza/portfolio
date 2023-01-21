@@ -11,7 +11,7 @@ document.querySelectorAll('li a').forEach((item) => {
 
         // AO CLICAR NO LINK FECHA O MENU (window.innerWidth - Verifica a largura atual da tela)
         if (window.innerWidth < 769) {
-          
+
             document.querySelector('li a.active').classList.remove('active');
             item.classList.add('active');
 
@@ -110,7 +110,52 @@ projects.map((item, index) => {
         </figure>
     `;
 
+
 });
+
+
+
+let allFigures = document.querySelectorAll('figure');
+let n = allFigures.length;
+
+
+let seeMore = document.querySelector('.seeMore');
+seeMore.addEventListener('click', showAllProjects);
+
+
+// FUNÇÃO PARA MOSTRAR TODOS OS PROJETOS
+function showAllProjects() {
+
+    if (n > 5) {
+
+        // Lista apenas os 6 primeiros projetos
+        for (let i = 0; i < allFigures.length; i++) {
+
+            if (i > 5) {
+                allFigures[i].style.display = 'none';
+            }
+
+        }
+
+        n = 5;
+        seeMore.innerHTML = 'Visualizar todos';
+
+    } else if (n == 5) {
+        // Lista todos os projetos
+        for (let i = 0; i < allFigures.length; i++) {
+
+            allFigures[i].style.display = 'block';
+
+        }
+
+        n = allFigures.length;
+        seeMore.innerHTML = 'Visualizar menos';
+
+    }
+
+}
+
+showAllProjects();
 
 
 
