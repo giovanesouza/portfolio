@@ -7,8 +7,10 @@ const stacks = [
         languages: [
             'devicon-html5-plain-wordmark colored',
             'devicon-css3-plain-wordmark colored',
+            'devicon-tailwindcss-original-wordmark colored',
             'devicon-bootstrap-plain-wordmark colored',
             'devicon-javascript-plain colored',
+            'devicon-typescript-plain colored',
             'devicon-react-original-wordmark colored'
         ]
     },

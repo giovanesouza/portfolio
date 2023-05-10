@@ -55,6 +55,22 @@ const projects = [
         urlRepository: 'https://github.com/giovanesouza/buscaCep',
         urlApp: 'https://giovanesouza.github.io/buscaCep/',
         description: 'Consumindo a API via cep. Possibilita consultar CEPs de todo o território brasileiro.'
+    },
+    {
+        name: 'Desafio Alura - Decodificador de texto',
+        img: 'assets/images/decodificador.png',
+        stack: 'FrontEnd',
+        urlRepository: 'https://github.com/giovanesouza/decodificador-texto',
+        urlApp: 'https://giovanesouza.github.io/decodificador-texto/',
+        description: 'Por meio desta aplicação é encriptar e/ou desencriptar textos.'
+    },
+    {
+        name: 'Conversor de Texto em Áudio',
+        img: 'assets/images/text-speech.png',
+        stack: 'FrontEnd',
+        urlRepository: 'https://github.com/giovanesouza/text-speech-converter',
+        urlApp: 'https://giovanesouza.github.io/text-speech-converter/',
+        description: 'Por meio desta aplicação é possível reproduzir o som do texto inserido no textearea.'
     }
 
 
