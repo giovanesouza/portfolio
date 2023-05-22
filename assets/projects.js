@@ -4,7 +4,7 @@ const projects = [
         name: 'Agência de Viagens',
         img: 'assets/images/agencia-viagens.png',
         stack: 'FullStack',
-        urlRepository: 'https://github.com/giovanesouza/agenciaViagens',
+        urlRepository: 'https://github.com/giovanesouza/SpringAgenciaViagens',
         urlApp: 'https://giovanesouza.github.io/agenciaViagens/',
         description: 'Projeto desenvolvido ao longo do curso de Desenvolvedor FullStack - Recode Pro. Com este projeto é possível vender passagens (função principal), mas também realizar diversas outras funções como cadastro de funcionários e cargos, novos destinos, solicitar contato, dentre outras funcionalidades. O link da aplicação exibe o projeto na versão Front-end, mas é possível ter acesso a versão FullStack por meio do link do repositório.'
     },
