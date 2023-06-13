@@ -71,6 +71,14 @@ const projects = [
         urlRepository: 'https://github.com/giovanesouza/text-speech-converter',
         urlApp: 'https://giovanesouza.github.io/text-speech-converter/',
         description: 'Por meio desta aplicação é possível reproduzir o som do texto inserido no textearea.'
+    },
+    {
+        name: 'Moda Brasil (Loja de roupas)',
+        img: 'assets/images/modaBrasil.jpg',
+        stack: 'FrontEnd',
+        urlRepository: 'https://github.com/giovanesouza/moda-brasil',
+        urlApp: 'https://giovanesouza.github.io/moda-brasil/',
+        description: 'Projeto desenvolvido com HTML5, CSS3 e Bootstrap 5. Trata de um modelo de loja virtual de roupas.'
     }
 
 

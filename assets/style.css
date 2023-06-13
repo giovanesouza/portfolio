@@ -354,6 +354,36 @@ span {
 }
 
 
+p.start a {
+  color: var(--color-gold);
+}
+
+p.start a:hover {
+  color: var(--color-success);
+}
+
+
+
+dl {
+  color: var(--color-secondary);
+}
+
+dt {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+dd {
+  font-size: 1.3rem;
+  padding: 0 0 1rem 1.6rem;
+}
+
+dd::before {
+  content: '🚀';
+  display: inline-block;
+  margin-right: 1rem;
+}
+
 
 
 
@@ -452,6 +482,7 @@ section#projects h2 {
 
 /* Engloba a imagem + legenda */
 figure {
+  position: relative;
   width: 100%;
   background-color: var(--color-dark);
   border: 0.1rem solid var(--color-dark);
@@ -465,6 +496,35 @@ figure {
 figure:hover {
   transform: scale(1.05);
 }
+
+
+
+/* Exibe o nome da stack do projeto */
+.stack {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+
+  color: var(--color-light);
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+
+.FullStack {
+  background-color: var(--color-primary);
+}
+
+.FrontEnd {
+  background-color: var(--color-success);
+}
+
+.BackEnd {
+  background-color: var(--color-gold);
+}
+
+
 
 
 

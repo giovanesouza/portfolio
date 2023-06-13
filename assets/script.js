@@ -104,6 +104,8 @@ projects.map((item, index) => {
 
     listProjects.innerHTML += `
         <figure data-key="${index}">
+
+        <div class="stack ${item.stack}" >${item.stack}</div>
             <img src="${item.img}" alt="${item.name}" />
 
             <figcaption data-key="${index}">${item.name}</figcaption>
