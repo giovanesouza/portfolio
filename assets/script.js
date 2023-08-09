@@ -34,15 +34,12 @@ let listTecnologies = document.querySelector('.listTecnologies');
 // Faz mapeamento de todos os itens e permite acessar os valores de todos os atributos
 stacks.map((item, index) => {
 
-
     listTecnologies.innerHTML += `
     <div class="language" data-key="${index}">
         <div class="material-symbols-outlined">${item.icon}</div>
         <div class="name">${item.name}</div>
     </div>
     `;
-
-
 
 });
 
@@ -88,7 +85,6 @@ document.querySelectorAll('.language').forEach(item => {
 
         // REMOVE BARRA DE ROLAGEM ENQUANTO MODAL ESTIVER ATIVO
         document.querySelector('body').style.overflow = 'hidden';
-
 
     })
 
@@ -173,7 +169,13 @@ document.querySelectorAll('figure').forEach(item => {
         document.querySelector('.modalTitle h5').innerHTML = `${projects[key].name}`; // Exibe o Nome da Linguagem
         document.querySelector('.modalBody').innerHTML = `
       
-      <div class="description"> <strong>Descrição:</strong> ${projects[key].description}</div>
+      <div class="description"> 
+
+      <div class='modal-img'> <img src="${projects[key].img}" title="${projects[key].name}" /> </div>
+      
+      <strong>Descrição:</strong> ${projects[key].description}
+      
+      </div>
 
 
       <p>

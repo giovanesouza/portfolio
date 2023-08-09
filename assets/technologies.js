@@ -22,7 +22,8 @@ const stacks = [
             'devicon-java-plain-wordmark colored',
             'devicon-spring-plain-wordmark colored',
             'devicon-csharp-plain-wordmark colored',
-            'devicon-php-plain colored'
+            'devicon-php-plain colored',
+            'devicon-python-plain-wordmark colored'
         ]
     },
     {

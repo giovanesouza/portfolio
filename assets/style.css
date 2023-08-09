@@ -378,11 +378,11 @@ dd {
   padding: 0 0 1rem 1.6rem;
 }
 
-dd::before {
+/* dd::before {
   content: '🚀';
   display: inline-block;
   margin-right: 1rem;
-}
+} */
 
 
 
@@ -531,7 +531,6 @@ figure:hover {
 figure img {
   width: 100%;
   margin-bottom: 0.5rem;
-
 }
 
 figure figcaption {
@@ -769,7 +768,19 @@ button {
 }
 
 
+
 /* UTILIZADO NO MODAL DE PROJETOS */
+
+.description .modal-img {
+  text-align: center;
+}
+
+.modal-img img {
+  width: 50%;
+  margin: 1.6rem 0;
+}
+
+
 .modalBody p {
   margin-bottom: 1rem;
 

@@ -17,6 +17,14 @@ const projects = [
         description: 'Projeto desenvolvido em SQUAD ao longo do curso da Recode Pro. Consiste em uma plataforma que visa fazer a ponte entre escolas da rede pública e instituições privadas que queiram ajudar a diminuir a desigualdade de recursos escolares voltado para tecnologia, contribuindo, assim, na formação/educação de crianças e adolencentes.'
     },
     {
+        name: 'Página de vendas - Curso de Violão',
+        img: 'assets/images/curso-violao.jpg',
+        stack: 'FrontEnd',
+        urlRepository: 'https://github.com/giovanesouza/curso-violao',
+        urlApp: 'https://violaosemfrustracao.com.br',
+        description: 'Projeto freelancer. Trata de uma página de vendas para um curso de Violão.'
+    },
+    {
         name: 'Clone do LinkedIn',
         img: 'assets/images/linkedin.png',
         stack: 'FrontEnd',
@@ -50,7 +58,7 @@ const projects = [
     },
     {
         name: 'Buscador de CEP',
-        img: 'assets/images/buscaCep.png',
+        img: 'assets/images/buscaCep.jpg',
         stack: 'FrontEnd',
         urlRepository: 'https://github.com/giovanesouza/buscaCep',
         urlApp: 'https://giovanesouza.github.io/buscaCep/',
