@@ -530,6 +530,7 @@ figure:hover {
 
 figure img {
   width: 100%;
+  height: 25rem;
   margin-bottom: 0.5rem;
 }
 
